@@ -1,0 +1,98 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Notifications API",
+    "dateExported": "2023-04-01T21:19:05.755Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0929fadb-c035-4dbf-91b2-acada8c9feba",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "List Notifications From Recipient",
+            "url": "{{base_url}}/notifications/from/a9edf5e2-c67f-40c9-97b2-74163744d55d",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-01T02:50:46.137Z",
+            "modified": "2023-04-01T20:56:50.579Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a2c91e97-68b4-437f-bcdf-a0a68e318379",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "Count Notifications From Recipient",
+            "url": "{{base_url}}/notifications/count/a9edf5e2-c67f-40c9-97b2-74163744d55d",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-04-01T20:57:35.623Z",
+            "modified": "2023-04-01T20:57:52.820Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "244bd027-8923-4de9-a8e8-4425a15c8ff6",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "Create Notification",
+            "url": "{{base_url}}/notifications",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-01T02:52:24.597Z",
+            "modified": "2023-04-01T21:05:14.995Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"recipientId\": \"a9edf5e2-c67f-40c9-97b2-74163744d55d\",\n  \"content\": \"Teste\",\n  \"category\": \"TESTE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9568cf24-f1fa-409f-aa41-3a646ed0f502",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "Cancel Notification",
+            "url": "{{base_url}}/notifications/61d9948c-072a-4a4c-bbb0-dd7e2b9c0d1d/cancel",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2023-04-01T20:58:31.856Z",
+            "modified": "2023-04-01T21:13:31.842Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1172a263-aff6-4302-b4a7-4a60d1610d6c",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "Read Notification",
+            "url": "{{base_url}}/notifications/61d9948c-072a-4a4c-bbb0-dd7e2b9c0d1d/read",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-04-01T21:04:21.568Z",
+            "modified": "2023-04-01T21:04:36.530Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "364854ad-d901-4e68-99b7-acc3198d62bb",
+            "colId": "919d0d08-45f8-428e-916e-f47a8f3c2dbd",
+            "containerId": "",
+            "name": "Unread Notification",
+            "url": "{{base_url}}/notifications/61d9948c-072a-4a4c-bbb0-dd7e2b9c0d1d/unread",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-04-01T21:04:45.430Z",
+            "modified": "2023-04-01T21:04:53.181Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
